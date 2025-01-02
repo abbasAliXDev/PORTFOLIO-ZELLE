@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #17191D;
+}
+.main{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 1700px;
+    margin: 0% auto;
+    padding-top: 20px;
+    background-color: #17191D;
+}
+
+.firstSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 30px;
+    gap: 20px;
+    padding: 0% 3%;
+    min-height: 340px;
+    height: auto;
+    justify-content: space-between;
+}
+
+.firstLft, .firstRgt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.firstLft {
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.firstRgt div {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.20), -3px -5px 10px rgba(150, 150, 150, 0.10);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px 5px;
+}
+
+.firstRgt div img {
+    width: 90%;
+    border-radius: 5px;
+    cursor: pointer;
+    height: auto;
+}
+
+.firstRgt div img:hover{
+    transform: scale(1.03);
+    border-radius: 20px;
+    transition: 0.5s all ease;
+    box-shadow: 5px 13px 15px rgba(111, 111, 111, 0.3), -5px -13px 15px rgba(111, 111, 111, 0.3);
+}
+
+.firstLftOne{
+    width: 100%;
+    height: auto;
+    flex: 2;
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.20), -3px -5px 10px rgba(150, 150, 150, 0.10);
+    min-height: 230px;
+}
+
+.firstLftTwo{
+    width: 100%;
+    height: auto;
+    flex: 1;
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.20), -3px -5px 10px rgba(150, 150, 150, 0.10);
+}
+.userIconDiv{
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.circleIcon{
+    background-color: #0072CB;
+    color: #BCC8D7;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 18px;
+    border-radius: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.firstLftTwoHdg{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 3px 3px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    font-family: "Poppins";
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.recentAchieve{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 13px 0px 0px 20px;
+}
+.recentAchieve li{
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 7px;
+    font-family: "Poppins", sans-serif;
+}
+.recentAchieve li  i{
+    color: #0072CB;
+}
+.recentAchieve li i:hover{
+    transition: 0.5s all ease;
+    animation: rotate 5s infinite linear;
+}
+.recentAchieve li span{
+    color: #BCC8D7;
+    font-size: 14px;
+    font-weight: 500;
+}
+.nameDiv{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: #BCC8D7;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.nameDiv span{
+    color: #0072CB;
+}
+
+.roleDiv{
+    padding-left: 20px;
+    padding-top: 5px;
+    color: #0072CB;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: rgba(0, 0, 0, 0.50) 0px 3px 3px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.phoneDiv, .emailDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.emailDiv span a, .phoneDiv span a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #BCC8D7;
+    font-weight: 500;
+}
+
+
+.emailDiv span i,  .phoneDiv span i{
+    color: #0072CB;
+}
+
+/* secondSection */
+
+.secondSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subHdg{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #0072CB;
+    font-size: 17px;
+}
+
+.primHdg{
+    letter-spacing: 0.2px;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 5px 5px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+.gridBox{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: auto;
+    overflow: hidden;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 20px;
+    padding: 0% 3%;
+    height: auto;
+}
+
+.gridCard{
+    height: 130px;
+    width: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 05px 08px 20px rgba(0, 0, 0, 0.25), -03px -05px 10px rgba(150, 150, 150, 0.15);
+}
+
+.cardLft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+}
+
+.cardLft img{
+    border-radius: 20px;
+    width: 90%;
+    height: 90%;
+}
+.cardLft img:hover{
+    filter: drop-shadow(0px 20px 50px #0009);
+    transform: scale(1.015);
+    transition: 0.5s all ease;
+}
+
+.cardRgt{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+}
+
+.cardTime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 20px;
+    width: auto;
+    max-width: 150px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    background-color: #BCC8D7;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 3px 3px;
+}
+
+.cardTitle{
+    width: 100%;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-right: 5%;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    letter-spacing: 0.05px;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 3px 3px;
+    color: #BCC8D7;
+}
+
+.cardOccName{
+    width: 100%;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 3px 3px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    letter-spacing: 0.05px;
+    color: #0072CB;
+}
+
+/* thirdSection */
+
+.thirdSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* fourthSection */
+
+.fourthSection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+}
+.fourthNav{
+    padding: 0% 3%;
+    width: 100%;
+}
+.fourthNav > div{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0px;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 05px 08px 20px rgba(0, 0, 0, 0.20), -03px -05px 10px rgba(150, 150, 150, 0.10);
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.fourthNav > div::-webkit-scrollbar{
+    display: none;
+}
+
+.fourthNav > div > button{
+    flex: 1;
+    padding: 19px 0px;
+    width: 315px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #BCC8D7;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 15px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fourthNav > div > button:hover{
+    background-color: #17191D;
+    transition: 0.3s all ease;
+    background: linear-gradient(145deg, #17191D 15%, #212428 100%);
+}
+
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+
+.fourthNav > div > .activeBtn{
+    background-color: #212428;
+    transition: 0.15s all ease;
+    background: linear-gradient(145deg, #17191D 15%, #212428 100%);
+    color: #0072CB;
+    font-weight: 600;
+}
+
+.mainContent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0% 4%;
+}
+
+.contentTab{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 70px;
+    display: none;
+    opacity: 0%;
+    visibility: hidden;
+    transition: 0.5s opacity,visibility ease;
+}
+
+.activeTab{
+    opacity: 100%;
+    visibility: visible;
+    transition: 0.5s opacity,visibility ease;
+    display: flex;
+}
+
+/* education */
+
+.educationContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.educationSubHdg{
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.30) 0px 3px 3px;
+    color: #0072CB;
+    font-family: "Poppins", sans-serif;
+}
+
+.educationPrimHdg{
+    font-size: 26px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #BCC8D7;
+    font-family: "Poppins", sans-serif;
+}
+
+.contentEduDiv{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 0% 3%;
+    box-shadow: 05px 08px 20px rgba(0, 0, 0, 0.20), -03px -05px 10px rgba(150, 150, 150, 0.10);
+}
+
+.contentEduDiv:hover{
+    transition: 0.3s all ease;
+    background-color: transparent;
+    background-image: linear-gradient(145deg, #212428 15%, #171928 70%);
+}
+
+.mainContentEduDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainContentEduDivLft{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 75%;
+    justify-content: center;
+}
+
+.mainContentEduDivRgt{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.mainContentEduDivRgt > div > img{
+    width: 60px;
+    height: 60px;
+}
+
+.mainContentEduHdg{
+    margin-bottom: 10px;
+    color: #BCC8D7;
+    padding-right: 5%;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.mainContentEduSubHdg{
+    margin-bottom: 10px;
+    color: #BCC8D7;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    margin-top: -2px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 19px;
+}
+
+.mainContentEduDivTagline{
+    width: 100%;
+    text-align: left;
+    color: #BCC8D7;
+    font-size: 12px;
+    margin-top: 35px;
+    letter-spacing: 0.1px;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 3px 3px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+#educationCer{
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* skills */
+
+#experSkill{
+    flex-direction: column;
+}
+
+.skillsContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skillLft, .skillRgt{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+}
+
+.subHdgSkill{
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif; 
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #0072CB;
+    font-size: 17px;
+}
+
+.primHdgSkill{
+    letter-spacing: 0.2px;
+    color: #BCC8D7;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 2px 2px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+}
+
+/* skillKit */
+
+.skillKit{
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    color: #BCC8D7;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.skillNameDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skillBar{
+    height: 8px;
+    box-shadow: inset 5px 8px 20px rgba(0, 0, 0, 0.20), inset -3px -5px 10px rgba(150, 150, 150, 0.10);
+    margin-top: 6px;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    background: linear-gradient(145deg, #17191D 15%, #212428 100%);
+}
+
+.skillFill{
+    width: 0%;
+    height: 8px;
+    background-color: #0072CB;
+}
+
+.achievementContainer{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+.achievementHdg{
+    color: #BCC8D7;
+    font-family: "Poppins", Sans-serif;
+    font-size: 25px;
+    margin-bottom: 19px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.achievementsOfCont{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.achievementsOfCont ul{
+    margin-top: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.achievementsOfCont ul li{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    color: #BCC8D7;
+    font-family: "Poppins", sans-serif;
+}
+
+.achievementsOfCont ul li i{
+    color: #0072CB;
+}
+.achievementsOfCont ul li i:hover{
+    transition: 0.3s all ease;
+    animation: rotate 5s infinite linear;
+}
+
+
+/* journery */
+
+#journery{
+    width: 100%;
+    flex-direction: column;
+    align-items: left;
+}
+
+.journeyYear{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #0072CB;
+}
+
+.paras{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-shadow: rgba(0, 0, 0, 0.20) 0px 3px 3px;
+    color: #BCC8D7;
+    font-family: "Poppins", sans-serif;
+    margin-top: 15px;
+}
+
+@keyframes rotate {
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .firstSection{
+        flex-direction: column;
+    }
+    .gridBox{
+        grid-template-columns: 1fr;
+    }
+    .gridCard{
+        flex-direction: column;
+        height: auto;
+    }
+    .cardLft, .cardRgt, .cardTitle, .cardOccName{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .cardTime{
+        text-align: center;
+    }
+    .skillsContainer{
+        flex-direction: column;
+    }
+    .skillLft, .skillRgt{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .subHdg{
+        font-size: 15px;
+    }
+    .educationPrimHdg{
+        margin-top: 15px;
+        font-size: 21px;
+    }
+    .fourthNavBtn{
+        transform: translateX(100%);
+    }
+    .cardTime{
+        width: 140px;
+        font-size: 10px;
+    }
+    .primHdg{
+        font-size: 25px;
+    }
+    .mainContentEduDiv{
+        flex-direction: column-reverse;
+    }
+    .mainContentEduDivRgt{
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: left;
+    }
+    .mainContentEduDivLft{
+        width: 100%;
+        display: block;
+    }
+    .mainContentEduSubHdg{
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    .contentEduDiv{
+        height: auto;
+        padding: 20px 2%;
+    }
+    .mainContentEduDivTagline{
+        margin-top: 0px;
+    }
+}
